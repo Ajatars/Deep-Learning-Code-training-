@@ -88,7 +88,7 @@ for e in range(1000):
 	if(e+1)%100 ==0:
 		loss_numpy = loss.eval(session=sess)
 		print('Epoch %d: Loss: %.12f' % (e + 1, loss_numpy)) #可以看到loss没有下降
-
+plt.show()
 '''placeholder()函数是在神经网络构建graph的时候在模型中的占位，
 此时并没有把要输入的数据传入模型，它只会分配必要的内存。等建立session，
 在会话中，运行模型的时候通过feed_dict()函数向占位符喂入数据。'''
